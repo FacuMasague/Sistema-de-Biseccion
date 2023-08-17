@@ -11,13 +11,11 @@ while i<100:
     i += 1
 
     c = (a + b) / 2
-
-    fa = funcion(a)
     fc = funcion(c)
 
-    if (fa * fc>0):
-        a = c
-    elif (fa *fc<0):
+    if (fc>0):
         b = c
+    elif (fc<0):
+        a = c
 
 print(c)
